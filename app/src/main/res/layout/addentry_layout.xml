@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity5_AddEntry"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/white"
+            android:layout_margin="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD ENTRY PAGE"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_weight="4.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/amatica_sc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="9">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profilePicture_entry"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/add_profile"
+                    android:scaleType="centerCrop"
+                    android:onClick="profilePicture"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Take a Picture"
+                    android:fontFamily="@font/amatica_sc"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text=" LAST NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/lastname_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="FIRST NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/firstname_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text=" MIDDLE NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/middlename_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="REMARK"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/remark_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="BIRTHDAY"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/birthday_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="date"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    tools:ignore="Deprecated"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/amatica_sc"
+                    android:text="GENDER"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/genderError_entry"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGender_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/radioFemale_entry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:checked="false"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioMale_entry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginLeft="30dp"
+                        android:checked="false"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioOther_entry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:layout_marginLeft="30dp"
+                        android:checked="false"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/others_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="text"
+                    android:visibility="invisible"
+                    android:hint="Please Specify:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="ADDRESS"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/address_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPostalAddress"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="CONTACT NUMBER"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/contactnumber_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:digits="0123456789"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/hobbiesError_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:text="HOBBIES"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/hobbies_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="textPostalAddress"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/otherInfoError_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:text="OTHER INFORMATION"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/otherInfoAnswer_entry"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="text"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"
+                    android:layout_marginBottom="50dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/addEntry_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amatica_sc"
+            android:text="ADD ENTRY"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="#00743F"
+            android:layout_weight="2.5"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/cancel_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:fontFamily="@font/amatica_sc"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#CC0000"
+            android:layout_weight="2.5"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

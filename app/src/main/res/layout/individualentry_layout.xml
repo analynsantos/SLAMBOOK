@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4_IndividualEntry"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/white"
+            android:layout_margin="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTRY PAGE"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_weight="4.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/amatica_sc"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="9">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/displayProfilePicture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/add_profile"
+                    android:background="@drawable/fullborder"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="LAST NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayLastName_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="FIRST NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayFirstName_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="MIDDLE NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayMiddleName_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="REMARK"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayRemark_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="BIRTHDAY"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayBirthday_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/amatica_sc"
+                    android:text="GENDER"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/genderError"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <RadioGroup
+                    android:id="@+id/displayRadioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/displayRadioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:checked="false"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                    <RadioButton
+                        android:id="@+id/displayRadioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginLeft="30dp"
+                        android:checked="false"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                    <RadioButton
+                        android:id="@+id/displayRadioOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:layout_marginLeft="30dp"
+                        android:checked="false"
+                        android:fontFamily="@font/amatica_sc"
+                        android:textSize="17sp"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/displayOthers_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="text"
+                    android:visibility="invisible"
+                    android:hint="Please Specify:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="ADDRESS"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayAddress_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:text="CONTACT NUMBER"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayContactnumber_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/hobbiesError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:text="HOBBIES"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayHobbies_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/otherInfoError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:text="OTHER INFORMATION"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amatica_sc"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayOtherInfoAnswer_xml"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:padding="5dp"
+                    android:layout_marginBottom="50dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goBackEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO BACK TO ENTRY LIST"
+        android:layout_weight=".5"
+        android:layout_margin="3dp"
+        android:textSize="22sp"
+        android:backgroundTint="#00743F"
+        android:fontFamily="@font/amatica_sc"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

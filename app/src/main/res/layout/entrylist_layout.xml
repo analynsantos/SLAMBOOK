@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3_EntryList"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="5"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/accountProfile"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            app:srcCompat="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/amatica_sc"/>
+
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/exit_app" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="9"
+        android:background="@drawable/border"
+        android:id="@+id/recycleviewContainer"/>
+
+    <Button
+        android:id="@+id/addEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW ENTRY"
+        android:layout_weight=".5"
+        android:layout_margin="3dp"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/ic_baseline_add_24"
+        android:backgroundTint="#00743F"
+        android:fontFamily="@font/amatica_sc"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

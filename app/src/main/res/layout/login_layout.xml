@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activity1_LogIn"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee_inline"
+        android:text="SLAMBOOK"
+        android:textColor="@color/white"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/amatica_sc"
+        android:text="USERNAME"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/averia_libre_light"
+        android:inputType="textPersonName"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="PASSWORD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amatica_sc"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/password_xml"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="17sp"
+        android:fontFamily="@font/averia_libre_light"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login_xml"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amatica_sc"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/mainButton"/>
+
+    <Button
+        android:id="@+id/register_xml"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc"
+        android:text="REGISTER"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/secondaryButton"/>
+
+</LinearLayout>

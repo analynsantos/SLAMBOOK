@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SLAMBOOK</string>
+    <string-array name="barangay_array">
+        <item>Anilao</item>
+        <item>Bangkal</item>
+        <item>Barihan</item>
+        <item>Bulihan</item>
+        <item>Caniogan</item>
+        <item>Catmon</item>
+        <item>Dakila</item>
+        <item>Ligas</item>
+        <item>Lugam</item>
+        <item>Mojon</item>
+    </string-array>
+    <string-array name="municipality_array">
+        <item>San Isidro</item>
+        <item>San Juan</item>
+        <item>Butuan</item>
+        <item>Carmen</item>
+        <item>Lapaz</item>
+        <item>Loreto</item>
+        <item>Kalibo</item>
+        <item>Malinao</item>
+        <item>Santa Marcela</item>
+        <item>Bagac</item>
+    </string-array>
+    <string-array name="province_array">
+        <item>Abra</item>
+        <item>Albay</item>
+        <item>Bataan</item>
+        <item>Batanes</item>
+        <item>Bulacan</item>
+        <item>Capiz</item>
+        <item>Cavite</item>
+        <item>Leyte</item>
+        <item>Masbate</item>
+        <item>Palawan</item>
+    </string-array>
+    <string-array name="security1_array">
+        <item>Choose one in the question:</item>
+        <item>What is your favorite color?</item>
+        <item>Who is your favorite singer?</item>
+        <item>Where did you meet your first love?</item>
+        <item>Who is your favorite actor?</item>
+        <item>What is the name of your first pet?</item>
+    </string-array>
+    <string-array name="security2_array">
+        <item>Choose one in the question:</item>
+        <item>What is your favorite color?</item>
+        <item>Who is your favorite singer?</item>
+        <item>Where did you meet your first love?</item>
+        <item>Who is your favorite actor?</item>
+        <item>What is the name of your first pet?</item>
+    </string-array>
+    <string-array name="security3_array">
+        <item>Choose one in the question:</item>
+        <item>What is your favorite color?</item>
+        <item>Who is your favorite singer?</item>
+        <item>Where did you meet your first love?</item>
+        <item>Who is your favorite actor?</item>
+        <item>What is the name of your first pet?</item>
+    </string-array>
+</resources>
